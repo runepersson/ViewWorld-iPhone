@@ -109,7 +109,7 @@
 		56388323135B3DCE00907EBA /* app_icon_57px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_icon_57px.png; sourceTree = "<group>"; };
 		56388324135B3DCE00907EBA /* build.config */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = build.config; sourceTree = "<group>"; };
 		5A1733D513D6DA6200AF0927 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		5A1733D713D6E8F400AF0927 /* ar */ = {isa = PBXFileReference; lastKnownFileType = file; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5A1733D713D6E8F400AF0927 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* ViewWorld-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ViewWorld-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		A4025E3313151D64001EC2F5 /* left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = left.png; path = ../graphics/left.png; sourceTree = SOURCE_ROOT; };
 		A4025E3413151D64001EC2F5 /* left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "left@2x.png"; path = "../graphics/left@2x.png"; sourceTree = SOURCE_ROOT; };

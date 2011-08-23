@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleDisplayName</key>
-	<string>ViewWorld</string>
+	<string>Beredskabsforbundet Reporter</string>
 	<key>CFBundleDocumentTypes</key>
 	<array/>
 	<key>CFBundleExecutable</key>
@@ -19,7 +19,7 @@
 		<string>Icon-72.png</string>
 	</array>
 	<key>CFBundleIdentifier</key>
-	<string>dk.viewworld.ViewWorld</string>
+	<string>dk.viewworld.beredskabet</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -31,7 +31,7 @@
 	<key>CFBundleURLTypes</key>
 	<array/>
 	<key>CFBundleVersion</key>
-	<string>1.2.0</string>
+	<string>1.2.1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSMainNibFile</key>
