@@ -91,6 +91,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0DC2193C140669AD008402BC /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = "/Users/rbp/code/ViewWorld-iPhone/ViewWorld/da.lproj/Localizable.strings"; sourceTree = "<absolute>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* ViewWorldAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ViewWorldAppDelegate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		1D3623250D0F684500981E51 /* ViewWorldAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ViewWorldAppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
@@ -624,6 +625,7 @@
 			children = (
 				5A1733D513D6DA6200AF0927 /* en */,
 				5A1733D713D6E8F400AF0927 /* ar */,
+				0DC2193C140669AD008402BC /* da */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -631,11 +633,52 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0D844C941404E94500AF5D19 /* Release copy */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: ViewWorld ApS";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: ViewWorld ApS";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "";
+				PREBINDING = NO;
+				PROVISIONING_PROFILE = "90543F76-8109-4394-8F63-11283D7D4376";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "90543F76-8109-4394-8F63-11283D7D4376";
+				SDKROOT = iphoneos;
+			};
+			name = "Release copy";
+		};
+		0D844C951404E94500AF5D19 /* Release copy */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Rune Persson (UVUP6QMH2M)";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ViewWorld_Prefix.pch;
+				INFOPLIST_FILE = "ViewWorld-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = ViewWorld;
+				PROVISIONING_PROFILE = "406FE9DB-B5D8-4F33-9FA8-9A92DF18F9A5";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release copy";
+		};
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: ViewWorld ApS";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Rune Persson (UVUP6QMH2M)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -649,7 +692,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = ViewWorld;
-				PROVISIONING_PROFILE = "90543F76-8109-4394-8F63-11283D7D4376";
+				PROVISIONING_PROFILE = "406FE9DB-B5D8-4F33-9FA8-9A92DF18F9A5";
 			};
 			name = Debug;
 		};
@@ -657,7 +700,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: ViewWorld ApS";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Rune Persson (UVUP6QMH2M)";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -669,7 +712,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = ViewWorld;
-				PROVISIONING_PROFILE = "90543F76-8109-4394-8F63-11283D7D4376";
+				PROVISIONING_PROFILE = "406FE9DB-B5D8-4F33-9FA8-9A92DF18F9A5";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -678,8 +721,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Rune Persson (UVUP6QMH2M)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Rune Persson (UVUP6QMH2M)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: ViewWorld ApS";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: ViewWorld ApS";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -688,8 +731,8 @@
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
-				PROVISIONING_PROFILE = "5074C6D5-1547-48E7-B699-CDAF976DA1A3";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "5074C6D5-1547-48E7-B699-CDAF976DA1A3";
+				PROVISIONING_PROFILE = "90543F76-8109-4394-8F63-11283D7D4376";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "90543F76-8109-4394-8F63-11283D7D4376";
 				SDKROOT = iphoneos;
 			};
 			name = AppStore;
@@ -699,8 +742,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: ViewWorld ApS";
-				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Distribution: ViewWorld ApS";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: ViewWorld ApS";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -713,8 +756,8 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = ViewWorld;
 				PROVISIONING_PROFILE = "90543F76-8109-4394-8F63-11283D7D4376";
-				"PROVISIONING_PROFILE[sdk=*]" = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				"PROVISIONING_PROFILE[sdk=*]" = "90543F76-8109-4394-8F63-11283D7D4376";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "90543F76-8109-4394-8F63-11283D7D4376";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = AppStore;
@@ -723,8 +766,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Rune Persson (UVUP6QMH2M)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Rune Persson (UVUP6QMH2M)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: ViewWorld ApS";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: ViewWorld ApS";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -732,8 +775,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
-				PROVISIONING_PROFILE = "5074C6D5-1547-48E7-B699-CDAF976DA1A3";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "5074C6D5-1547-48E7-B699-CDAF976DA1A3";
+				PROVISIONING_PROFILE = "90543F76-8109-4394-8F63-11283D7D4376";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "90543F76-8109-4394-8F63-11283D7D4376";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -742,8 +785,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Rune Persson (UVUP6QMH2M)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Rune Persson (UVUP6QMH2M)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: ViewWorld ApS";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: ViewWorld ApS";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -752,8 +795,8 @@
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
-				PROVISIONING_PROFILE = "5074C6D5-1547-48E7-B699-CDAF976DA1A3";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "5074C6D5-1547-48E7-B699-CDAF976DA1A3";
+				PROVISIONING_PROFILE = "90543F76-8109-4394-8F63-11283D7D4376";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "AB2DA99C-CDE0-4941-B09D-CA9093B19A50";
 				SDKROOT = iphoneos;
 			};
 			name = Release;
@@ -766,6 +809,7 @@
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
 				1D6058950D05DD3E006BFB54 /* Release */,
+				0D844C951404E94500AF5D19 /* Release copy */,
 				5622E228131D2A15009EC053 /* AppStore */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -776,6 +820,7 @@
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
 				C01FCF5008A954540054247B /* Release */,
+				0D844C941404E94500AF5D19 /* Release copy */,
 				5622E227131D2A15009EC053 /* AppStore */,
 			);
 			defaultConfigurationIsVisible = 0;

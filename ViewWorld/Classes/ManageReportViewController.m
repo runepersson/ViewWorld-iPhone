@@ -49,7 +49,8 @@
 -(void)uploadFinishedReports{
 	UploadSelectionViewController *uploadSelectionVC = [[UploadSelectionViewController alloc] init];
 	uploadSelectionVC.title = NSLocalizedString(@"Select report", @"uploadSelectionVC_title");
-	[self.navigationController pushViewController:uploadSelectionVC animated:YES];	
+	[self.navigationController pushViewController:uploadSelectionVC animated:YES];
+    [uploadSelectionVC release];
 }
 
 // Implement loadView to create a view hierarchy programmatically, without using a nib.
