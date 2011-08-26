@@ -686,7 +686,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: ViewWorld ApS";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Rune Persson (UVUP6QMH2M)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -700,7 +700,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = ViewWorld;
-				PROVISIONING_PROFILE = "90543F76-8109-4394-8F63-11283D7D4376";
+				PROVISIONING_PROFILE = "406FE9DB-B5D8-4F33-9FA8-9A92DF18F9A5";
 			};
 			name = Debug;
 		};
@@ -751,7 +751,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: ViewWorld ApS";
 				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: ViewWorld ApS";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -765,7 +765,7 @@
 				PRODUCT_NAME = ViewWorld;
 				PROVISIONING_PROFILE = "90543F76-8109-4394-8F63-11283D7D4376";
 				"PROVISIONING_PROFILE[sdk=*]" = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "90543F76-8109-4394-8F63-11283D7D4376";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = AppStore;
